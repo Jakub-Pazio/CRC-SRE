@@ -10,3 +10,12 @@ func TestTest(t *testing.T) {
 		t.Error("Can't happen")
 	}
 }
+
+func TestFailing(t *testing.T) {
+	got := 1 + 1
+	want := 3
+
+	if got != want {
+		t.Errorf("Got %d but wanted %d", got, want)
+	}
+}
